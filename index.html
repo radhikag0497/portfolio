@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radhika Goel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <!-- <a href="#" class="nav-item active" onclick="showWindow('profile')">Profile</a>
+    <a href="#" class="nav-item" onclick="showWindow('projects')">Projects</a>
+    <a href="#" class="nav-item" onclick="showWindow('skills')">Skills</a>
+    <a href="#" class="nav-item" onclick="showWindow('contact')">Contact</a> -->
+    <a href="#" class="nav-item active" data-target="profile">Profile</a>
+    <a href="#" class="nav-item" data-target="projects">Projects</a>
+    <a href="#" class="nav-item" data-target="skills">Skills</a>
+    <a href="#" class="nav-item" data-target="contact">Contact</a>
+  </nav>
+
+  <!-- PROFILE WINDOW -->
+  <section id="profile" class="window active">
+    <div class="header">
+      <h4 class="status">AVAILABLE FOR HIRE</h4>
+      <div class="profile-card">
+        <img src="profile.jpg" alt="Radhika Goel" class="profile-pic">
+        <div class="profile-info">
+          <h2>Radhika Goel</h2>
+          <h3>Senior Software Engineer | Embedded Systems & Automation</h3>
+          <p class="summary">
+            Results-oriented Senior Software Engineer specializing in embedded systems, USB driver development, and automation, with a proven track record of accelerating validation, streamlining firmware delivery, and building robust, high-performance solutions across complex hardware-software environments.
+          </p>
+          <p class="location">📍 Ghaziabad, India • Open to Worldwide / Remote</p>
+          <div class="actions">
+            <button class="icon-btn">💼<a href="mailto:radhika.goel0497@gmail.com">radhika.goel0497@gmail.com</a></button>
+            <button class="icon-btn">📞<a href="tel:+919045126055">+91 9045126055</a></button>
+            <button class="icon-btn">🔗<a href="https://linkedin.com/in/radhika-goel-4a9362155"></a></button>
+            <a href="Radhika Goel CV.pdf" class="btn">CV / Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signals">
+      <h4>TELEMETRIC SIGNALS <span class="synced">• synced</span></h4>
+      <div class="signal-grid">
+        <div class="signal-box"><h5>INDUSTRY</h5><p class="metric">Senior Level</p><span>Synopsys & Intel</span></div>
+        <div class="signal-box"><h5>AUTOMATION</h5><p class="metric">50% Faster</p><span>Pytest & Jenkins CI/CD</span></div>
+        <div class="signal-box"><h5>EDUCATION</h5><p class="metric">M.Tech AI</p><span>NIT Hamirpur</span></div>
+        <div class="signal-box"><h5>DOMAIN</h5><p class="metric">100%</p><span>Bare-Metal & RTOS</span></div>
+      </div>
+    </div>
+
+    <div class="core">
+      <h4>Core Disciplines</h4>
+      <div class="discipline">
+        <h5>USB Drivers & Bare-Metal</h5>
+        <p>xHCI host and UDC device drivers, register programming, TRB/DMA queue management, and interrupt handling for low-level USB communication.</p>
+        <span>xHCI • UDC • DMA/TRB</span>
+      </div>
+      <div class="discipline">
+        <h5>RTOS & Embedded Systems</h5>
+        <p>Implemented USB class drivers (CDC-ACM, MSC, DFU) on MCU SDK with FreeRTOS, optimizing real-time device communication via bare-metal APIs.</p>
+        <span>FreeRTOS • MCU SDK • CDC/MSC</span>
+      </div>
+      <div class="discipline">
+        <h5>Automation & CI/CD Pipelines</h5>
+        <p>End-to-end USB validation pipelines reducing manual effort by 50%, USB Test Environment Suite automation, and Robot Framework / Postman test suites.</p>
+        <span>Pytest • Jenkins • UTE Suite</span>
+      </div>
+      <div class="discipline">
+        <h5>Microservices & Cloud AI Delivery</h5>
+        <p>Containerized microservices for firmware delivery, FastAPI CRUD services for ATLAS Unified Installer, WebRTC audio streaming, and OpenVINO IR conversion.</p>
+        <span>FastAPI • Docker • K8s • OpenVINO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS WINDOW -->
+  <section id="projects" class="window">
+    <h4>SYSTEM.PROJECTS.LIST() <span class="version">v4.18.2</span></h4>
+    <input type="text" placeholder="Search by title, technology, or tag..." class="search-bar">
+    <div class="filter-bar">
+      <button class="filter active">ALL (5)</button>
+      <button class="filter">EMBEDDED & DRIVERS</button>
+      <button class="filter">AUTOMATION & CI/CD</button>
+      <button class="filter">AI & DEEP LEARNING</button>
+      <button class="filter">MICROSERVICES</button>
+    </div>
+
+    <div class="project-card">
+      <h5 class="flag">FLAGSHIP ARCHITECTURE • Synopsys Benchmark</h5>
+      <div class="banner">
+        <h3>xhci_udc_driver.c • Bare-Metal</h3>
+        <p>Regression Cycles: <span class="metric-green">50% Faster</span> | DMA/TRB Queue: <span class="metric-green">0-Drop</span></p>
+      </div>
+      <h3>USB Test Environment Automation (UTE) & Bare-Metal Drivers</h3>
+      <p>High-reliability low-level USB driver framework with register programming, TRB/DMA queue management, and automated Git-integrated validation pipelines reducing manual QA effort by 50%.</p>
+      <div class="tags"><span>C/C++</span><span>xHCI</span><span>UDC</span><span>FreeRTOS</span><span>Pytest</span><span>Jenkins</span></div>
+      <div class="buttons"><a href="#" class="btn">Architecture Specs</a><a href="#" class="btn secondary">Driver Overview</a></div>
+    </div>
+
+    <div class="project-card">
+      <h5>ATLAS AI Unified Installer Tool</h5>
+      <p>Containerized deployment infrastructure and backend services built for enterprise tooling with high reliability and automated regression testing.</p>
+      <div class="tags"><span>FastAPI</span><span>Docker</span><span>Kubernetes</span><span>MySQL</span><span>Python</span></div>
+    </div>
+
+    <div class="project-card">
+      <h5>Conversational AI Chatbot SDK & Audio Streaming</h5>
+      <p>Real-time ASR & Voice Activity Detection (VAD).</p>
+      <div class="tags"><span>Intel</span><span>WebRTC</span><span>OpenVINO</span></div>
+    </div>
+  </section>
+
+  <!-- SKILLS WINDOW -->
+  <section id="skills" class="window">
+    <h2>Embedded Systems, AI/ML & Automation</h2>
+    <p>Specialized in USB driver architectures, bare-metal hardware integration, RTOS firmware validation, and optimized AI/ML pipelines.</p>
+
+    <div class="skills-grid">
+      <div class="skill-box"><h5>Core Specialization</h5><p class="metric">Embedded & Systems</p><span>xHCI, UDC & FreeRTOS</span></div>
+      <div class="skill-box"><h5>Applied Domain</h5><p class="metric">AI / ML & Automation</p><span>Pytest, CI/CD & Deep Learning</span></div>
+    </div>
+
+    <h4>Tech Radar Status <span class="live">LIVE TRACKER</span></h4>
+    <div class="tech-list">
+      <div class="tech-item"><strong>TypeScript 5.x</strong> — Standard for all client/server contracts; strict null-checks enforced. <span class="adopt">ADOPT</span></div>
+      <div class="tech-item"><strong>Go Microservices</strong> — Preferred runtime for high-throughput, low-latency concurrent daemons. <span class="adopt">ADOPT</span></div>
+      <div class="tech-item"><strong>Kubernetes & ArgoCD</strong> — GitOps engine driving rolling automated zero-downtime clusters. <span class="adopt">ADOPT</span></div>
+      <div class="tech-item"><strong>pgvector & PostgreSQL</strong> — Primary relational datastore with semantic embeddings indexing. <span class="adopt">ADOPT</span></div>
+    </div>
+</section>
